@@ -49,6 +49,57 @@ h1 {
   padding: 10px;
 }
 
+.openImage {
+  cursor: pointer;
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+
+.modal-content {
+  margin: 50px auto;
+  width: 80%;
+  border: 5px solid #ffffff;
+  height: 500px;
+  position: relative;
+}
+.modal-content img {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 40%;
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+}
+#prev {
+  left: 10px;
+}
+#next {
+  right: 10px;
+}
+
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;

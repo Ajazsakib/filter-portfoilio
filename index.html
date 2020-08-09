@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio Gallery</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Slider Gallery</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -18,21 +18,21 @@
 <div class="row">
   <div class="column nature">
     <div class="content">
-      <img src="images/mountains.jpg" alt="Mountains" style="width:100%">
+      <img class="openImage" src="images/mountains.jpg" alt="Mountains" style="width:100%">
       <h4>Mountains</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column nature">
     <div class="content">
-      <img src="images/lights.jpg" alt="Lights" style="width:100%">
+      <img class="openImage" src="images/lights.jpg" alt="Lights" style="width:100%">
       <h4>Lights</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column nature">
     <div class="content">
-      <img src="images/nature.jpg" alt="Nature" style="width:100%">
+      <img class="openImage" src="images/nature.jpg" alt="Nature" style="width:100%">
       <h4>Forest</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -40,21 +40,21 @@
 
   <div class="column cars">
     <div class="content">
-      <img src="images/cars1.jpg" alt="Car" style="width:100%">
+      <img class="openImage" src="images/cars1.jpg" alt="Car" style="width:100%">
       <h4>Retro</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column cars">
     <div class="content">
-      <img src="images/cars2.jpg" alt="Car" style="width:100%">
+      <img class="openImage" src="images/cars2.jpg" alt="Car" style="width:100%">
       <h4>Fast</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column cars">
     <div class="content">
-      <img src="images/cars3.jpg" alt="Car" style="width:100%">
+      <img class="openImage" src="images/cars3.jpg" alt="Car" style="width:100%">
       <h4>Classic</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
@@ -62,26 +62,41 @@
 
   <div class="column people">
     <div class="content">
-      <img src="images/people1.jpg" alt="People" style="width:100%">
+      <img class="openImage" src="images/people1.jpg" alt="People" style="width:100%">
       <h4>Girl</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column people">
     <div class="content">
-      <img src="images/people2.jpg" alt="People" style="width:100%">
+      <img class="openImage" src="images/people2.jpg" alt="People" style="width:100%">
       <h4>Man</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column people">
     <div class="content">
-      <img src="images/people3.jpg" alt="People" style="width:100%">
+      <img class="openImage" src="images/people3.jpg" alt="People" style="width:100%">
       <h4>Woman</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
 <!-- END GRID -->
+</div>
+
+
+<div class="modal" id="myModal">
+  
+  <div class="modal-content">
+    <img id="modalImage">
+    <span class="arrow" id="prev"> < </span>
+  <span class="arrow" id="next"> > </span>
+  </div>
+
+  <span id="close">X</span>
+
+  
+
 </div>
 
 <script type="text/javascript" src="script.js"></script>
