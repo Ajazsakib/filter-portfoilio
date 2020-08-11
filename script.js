@@ -63,6 +63,8 @@ let modalImage = document.getElementById("modalImage");
 
 let currentIndex;
 
+let size = openImage[0].clientWidth;
+
 
 for(let i=0; i<openImage.length; i++) {
   openImage[i].addEventListener("click", function() {
