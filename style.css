@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.red {
+	background-color: #c20302;
+}
+.blue {
+	background-color: blue;
+}
+.yellow {
+	background-color: yellow;
+}
+.pink {
+	background-color: pink;
+}
+
+.sliderContainer {
+	width: 600px;
+	margin: 100px auto;
+	overflow: hidden;
+	border: 5px solid #000000;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	display: flex;
+	width: 100%;
+	height: 300px;
+	transition: 1s;
+}
+
+.slideBox {
+	transition: 1s;
+}
+
+#prev {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #ffffff;
+	color: #c20302;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+#next {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #ffffff;
+	color: #c20302;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;	
+}
+
+.indicator {
+position: absolute;
+left: 40%;
+bottom: 10px;
+}
+
+.indicator div {
+	width: 15px;
+	height: 15px;
+	background-color: #000000;
+	border-radius: 100%;
+	display: inline-block;
+	margin: 0px 5px;
+	cursor: pointer;
+	opacity: 0.4;
+}
+
+.indicator div.active {
+	opacity: 1;
+}
