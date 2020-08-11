@@ -51,6 +51,7 @@ h1 {
 
 .openImage {
   cursor: pointer;
+  transition: 1s;
 }
 .modal {
   width: 100%;

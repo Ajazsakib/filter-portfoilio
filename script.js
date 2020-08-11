@@ -63,7 +63,7 @@ let modalImage = document.getElementById("modalImage");
 
 let currentIndex;
 
-let size = openImage[0].clientWidth;
+
 
 
 for(let i=0; i<openImage.length; i++) {
@@ -71,6 +71,7 @@ for(let i=0; i<openImage.length; i++) {
     myModal.style.display = "block";
     modalImage.src = this.src;
     currentIndex = i;
+    console.log(currentIndex);
     
   });
 }
@@ -87,20 +88,22 @@ let next = document.getElementById("next");
 
 next.addEventListener("click", function() {
 
-  modalImage.src = openImage[currentIndex + 1].src;
-  currentIndex++;
-  if(currentIndex >= openImage.length - 1) {
+   if(currentIndex >= openImage.length - 1) {
     currentIndex = -1;
   }
+  modalImage.src = openImage[currentIndex + 1].src;
+  currentIndex++;
+ 
 
 });
 
 prev.addEventListener("click", function() {
-  modalImage.src = openImage[currentIndex - 1].src;
-  currentIndex--;
-  if(currentIndex < 1) {
+   if(currentIndex < 1) {
     currentIndex = openImage.length;
   }
+  modalImage.src = openImage[currentIndex - 1].src;
+  currentIndex--;
+ 
 });
 
 // function slide(n) {
