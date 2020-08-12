@@ -1,13 +1,12 @@
 let slideBox = document.querySelectorAll(".slideBox");
 let slide = document.querySelector(".slide");
-console.log(slideBox.length);
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 
 let indicator = document.querySelectorAll(".indicator div");
 
 let size = slideBox[0].clientWidth;
-console.log(size);
+
 
 currentSlide = 0;
 showSlides(currentSlide);
@@ -27,15 +26,27 @@ function showSlides(n) {
 
   slide.style.transform = 'translateX(' + (-size*currentSlide) + 'px)'; 	
 
-  	if(slideBox[currentSlide].classList.contains("last")) {
-  		
-  	}
+  	console.log(currentSlide);
 
   	for(let i=0; i<slideBox.length; i++) {
   		indicator[i].className = indicator[i].className.replace("active",  "");
   	}
 
-  	indicator[currentSlide].classList.add("active");
+  	if(currentSlide < 0) {
+      currentSlide = slideBox.length - 1;
+       slide.style.transform = 'translateX(' + (-size*currentSlide) + 'px)';  
+
+    }
+
+    
+
+
+    if(currentSlide >= slideBox.length) {
+      currentSlide = 0;
+      slide.style.transform = 'translateX(' + (size*currentSlide) + 'px)'; 
+    }
+
+    indicator[currentSlide].classList.add("active");
 
 }
 
