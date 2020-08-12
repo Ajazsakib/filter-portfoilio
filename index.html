@@ -6,27 +6,41 @@
 </head>
 <body>
 
-<div class="sliderContainer">
-	<div class="slide">
-	<img src="images/cars1.jpg" class="slideBox">
-	<img src="images/cars2.jpg" class="slideBox">
-	<img src="images/cars3.jpg" class="slideBox">
-	<img src="images/lights.jpg" class="slideBox last">
-</div>
-	<a href="javascript:void(0)" id="prev"> < </a>
-	<a href="javascript:void(0)" id="next"> > </a>
+	<div class="sliderContainer">
+		<div class="slider">
+			<div class="slide active">
+				<img src="images/cars1.jpg" class="img-fluid">
+			</div>
 
-	<div class="indicator">
-		<div class="active"></div>
-		<div class="active"></div>
-		<div class="active"></div>
-		<div class="active"></div>
+			<div class="slide">
+				<img src="images/cars2.jpg" class="img-fluid">
+			</div>
+
+			<div class="slide">
+				<img src="images/cars3.jpg" class="img-fluid">
+			</div>
+
+			<div class="slide">
+				<img src="images/lights.jpg" class="img-fluid">
+			</div>
+		</div>
+
+		<div class="slider-control">
+			<button id="prev"> << </button>
+			<button id="next"> >> </button>
+		</div>
+
+		<div class="slider-dots">
+			<div class="dot active"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+		</div>
+
 	</div>
 
-</div>
 
-
-
-<script type="text/javascript" src="script.js"></script>
+	<script src="jquery-3.5.1.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
