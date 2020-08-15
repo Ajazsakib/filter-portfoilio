@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Slider</title>
+	<title>Carousel Slider</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-	<div class="sliderContainer">
-		<div class="slider">
-			<div class="slide active">
-				<img src="images/cars1.jpg" class="img-fluid">
+	<div class="mainContainer">
+		<div class="slideContainer">
+			<div class="slides active">
+				<img src="images/cars1.jpg">
 			</div>
-
-			<div class="slide">
-				<img src="images/cars2.jpg" class="img-fluid">
+			<div class="slides">
+				<img src="images/cars2.jpg">
 			</div>
-
-			<div class="slide">
-				<img src="images/cars3.jpg" class="img-fluid">
+			<div class="slides">
+				<img src="images/cars3.jpg">
 			</div>
-
-			<div class="slide">
-				<img src="images/lights.jpg" class="img-fluid">
+			<div class="slides">
+				<img src="images/lights.jpg">
 			</div>
 		</div>
-
-		<div class="slider-control">
-			<button id="prev"> << </button>
-			<button id="next"> >> </button>
-		</div>
-
-		<div class="slider-dots">
-			<div class="dot active"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-		</div>
-
+		<button id="prev">prev</button>
+		<button id="next">next</button>
 	</div>
 
-
-	<script src="jquery-3.5.1.js"></script>
-	<script src="script.js"></script>
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+	<script type="text/javascript" src="script-oop.js"></script>
 </body>
 </html>
