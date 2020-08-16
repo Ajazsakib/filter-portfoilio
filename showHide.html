@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Hide</title>
+</head>
+
+<style type="text/css">
+	
+	#content {
+		overflow: hidden;
+	}
+
+	.hide {
+		max-height: 0;
+		opacity: 0;
+		transition: max-height 1s ease-out, opacity 1s linear;
+		
+	}
+
+	.show {
+		max-height: 100%;
+		opacity: 1;	
+		transition: max-height 1s ease-out, opacity 1s linear;
+		
+	}
+
+	
+
+</style>
+<body>
+
+	<button id="show">show</button>
+	<button id="hide">hide</button>
+
+	<div id="content">
+
+		<ul>
+			<li>Saquib Ajaz</li>
+			<li>MCA</li>
+			<li>Frontend</li>
+			<li>Developer</li>
+		</ul>
+
+	</div>
+	<h1>Hi</h1>
+
+<script type="text/javascript">
+	
+	let show = document.getElementById("show");
+	let hide = document.getElementById("hide");
+
+	let content = document.getElementById("content");
+	let button = document.querySelectorAll("button");
+
+	for(let i=0; i<button.length; i++) {
+		button[i].addEventListener("click", function() {
+			if(this.id == "hide") 
+			{
+				
+				content.classList.remove("show");
+				content.classList.add("hide");
+			}
+
+			if(this.id == "show") {
+				
+				content.classList.add("show");
+				content.classList.remove("hide");
+			}
+		});
+	}
+
+</script>
+</body>
+</html>
